@@ -5,6 +5,7 @@ namespace App\Entity;
 use Doctrine\DBAL\Types\Types;
 use Doctrine\ORM\Mapping as ORM;
 use Doctrine\ORM\Mapping\MappedSuperclass;
+use Symfony\Component\Validator\Constraints as Assert;
 
 #[MappedSuperclass]
 #[ORM\HasLifecycleCallbacks]
@@ -12,6 +13,12 @@ class Product
 {
 
     #[ORM\Column(length: 255)]
+    #[Assert\Length(
+        min: 10,
+        max: 20,
+        minMessage: 'Le titre doit avoir au minimum {{ limit }} caractères',
+        maxMessage: 'Le titre doit avoir au maximum {{ limit }} caractères',
+    )]
     protected ?string $title = null;
 
     #[ORM\Column(length: 255)]

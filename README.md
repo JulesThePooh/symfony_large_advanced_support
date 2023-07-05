@@ -40,10 +40,14 @@ TODO
   - templates/game/index.html.twig
 
 ### validation form ###
-TODO
+- exemple sur src/Entity/Product
+- https://symfony.com/doc/current/reference/constraints/Length.html
 
 ### brevo ###
-TODO
+- creation de compte : https://app.brevo.com/
+- doc api : https://developers.brevo.com/docs/send-a-transactional-email
+  - parametrer clef api puis conserver
+  - voir full exemple dans src/Command/SendTestMailCommand
 
 ### serializer ###
 TODO
