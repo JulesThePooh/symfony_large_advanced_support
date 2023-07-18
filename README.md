@@ -49,7 +49,7 @@ TODO
   - parametrer clef api puis conserver
   - voir full exemple dans src/Command/SendTestMailCommand
 
-### serializer ###
+### serializer + groups ###
 TODO
 
 ### translation ###
